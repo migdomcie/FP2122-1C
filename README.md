@@ -58,9 +58,33 @@ En este proyecto se han implementado las siguientes funciones que corresponden a
 * **Bloque 0**  
 
      * **lee_registros(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas con los datos del fichero.
-   
+     
+#### Entrega 2
+
+ * **Bloque 1**
+ 
+     * **filtra_nacimientos_provincias (datos, provincia)**: Dada una lista de tuplas de tipo Nacimientos y una provincia, facilitada como parámetro, devuelve una lista de tuplas de tipo Nacimientos con los datos de los nacimientos producidos en tal provincia.
+     
+     * **calcula_pesopromedio_género_provincias (datos, provincia, género)**: Dada una lista de tuplas de tipo Nacimientos, una provincia y el género como parámetros, devuelve el promedio de peso de los nacimientos producidos en dicha provincia y para dicho género.
+     
+ * **Bloque 2**
+     
+     * **calcula_altura_max_género_tipocentro (datos, tipocentro, género)**: Dada una lista de tuplas de tipo Nacimientos, el tipo de centro y el género devuelve la tupla procedente de dicha lista que consiste en el nacimiento de altura máxima por tipo de centro y género facilitados como parámetros.
+     
+     * **filtra_recientes_nacimientos_género_provincias (datos, provincia, género)**: Dada una lista de tuplas de tipo Nacimientos, la provincia y el género facilitados como parámetros, devuelve la lista de tuplas ordenadas con los nacimientos de más recientes a menos recientes por provincia y género.
+     
+     * **convierte_mesnom_mesnum(datos, mes)**: Función auxiliar que convierte el mes en nombre aportado como parámetro, a mes en número para poder compararlo con el mes en número de la fecha de la clase procedente de la tupla Nacimientos "FNacimiento".
+    
+     * **filtra_dict_nacimientos_tipocentro_mes (datos, tipocentro, mes)**: Dada una lista de  tuplas de tipo Nacimientos, el tipo de centro y el mes en nombre, aportados como parámetros, devuelve un diccionario con una cadena de caracteres con el tipo de centro y el mes como clave y la lista de nacimientos producidos en dicho tipo de centro y dicho mes como valores.
+     
 ### Módulo test_nacimientos
 
 En este módulo se han definido las siguientes funciones, las cuales son usadas para probar la función cuyo nombre posee. Por ejemplo, la función **test_lee_registros** prueba la función **lee_registros**.
 
-* **test_lee_registros(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas con los datos del fichero.
+* **test_lee_registros()**
+* ** registros**: variable que recoge la lista formada por cada tupla de tipo Nacimientos leída mediante la función "test_lee_registros" para su posterior uso en los demás tests.
+* **test_filtra_nacimientos_provincias() **
+* **test_calcula_pesopromedio_género_provincias()**
+* **test_calcula_altura_max_género_tipocentro()**
+* **test_filtra_recientes_nacimientos_género_provincias()**
+* **test_filtra_dict_nacimientos_tipocentro_mes()**
