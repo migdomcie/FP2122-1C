@@ -61,7 +61,7 @@ def test_filtra_dict_nacimientos_tipocentro_mes():
 #FUNCIÓN LECTURA DEFINIDA
 
 def test_lee_registros():
-    datos= lee_registros("../data/Nacimientos.csv")
+    datos= lee_registros("../data/nacimientos.csv")
     return datos
 
 #FUNCIÓN LECTURA (TEST)
