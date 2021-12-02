@@ -97,7 +97,7 @@ def filtra_dict_nacimientos_tipocentro_mes (datos, tipocentro, mes):
         if tipocentro == registro.TipoCentro and convierte_mesnom_mesnum(mes) == datetime.strftime(registro.FNacimiento, "%m"):
             registro_tipocentro_mes.append(registro)
             
-        dict_nacimientos_tipocentro_mes[f"Nacimientos en {mes} para el tipo: {tipocentro}"]= registro_tipocentro_mes
+        dict_nacimientos_tipocentro_mes[f"Nacimientos en {mes} para el tipo '{tipocentro}'"]= registro_tipocentro_mes
     
     return dict_nacimientos_tipocentro_mes
-       
+   
