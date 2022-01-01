@@ -57,16 +57,17 @@ En este proyecto se han implementado las siguientes funciones que corresponden a
 
 * **Bloque 0**  
 
-     * **lee_registros(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas con los datos del fichero.
+    * **lee_registros(fichero)**: lee los datos del fichero csv y devuelve una lista de tuplas con los datos del fichero.
      
 #### Entrega 2
 
  * **Bloque 1**
  
-     * **filtra_nacimientos_provincias (datos, provincia)**: Dada una lista de tuplas de tipo Nacimientos y una provincia, facilitada como parámetro, devuelve una lista de tuplas de tipo Nacimientos con los datos de los nacimientos producidos en tal provincia.
+    * **filtra_nacimientos_provincias (datos, provincia)**: Dada una lista de tuplas de tipo Nacimientos y una provincia, facilitada como parámetro, devuelve una lista de tuplas de tipo Nacimientos con los datos de los nacimientos producidos en tal provincia.
      
-     * **calcula_pesopromedio_género_provincias (datos, provincia, género)**: Dada una lista de tuplas de tipo Nacimientos, una provincia y el género como parámetros, devuelve el promedio de peso de los nacimientos producidos en dicha provincia y para dicho género.
+    * **calcula_pesopromedio_género_provincias (datos, provincia, género)**: Dada una lista de tuplas de tipo Nacimientos, una provincia y el género como parámetros, devuelve el promedio de peso de los nacimientos producidos en dicha provincia y para dicho género.
      
+ 
  * **Bloque 2**
      
      * **calcula_altura_max_género_tipocentro (datos, tipocentro, género)**: Dada una lista de tuplas de tipo Nacimientos, el tipo de centro y el género devuelve la tupla procedente de dicha lista que consiste en el nacimiento de altura máxima por tipo de centro y género facilitados como parámetros.
@@ -75,8 +76,29 @@ En este proyecto se han implementado las siguientes funciones que corresponden a
      
      * **convierte_mesnom_mesnum(datos, mes)**: Función auxiliar que convierte el mes en nombre aportado como parámetro, a mes en número para poder compararlo con el mes en número de la fecha de la clase procedente de la tupla Nacimientos "FNacimiento".
     
-     * **filtra_dict_nacimientos_tipocentro_mes (datos, tipocentro, mes)**: Dada una lista de  tuplas de tipo Nacimientos, el tipo de centro y el mes en nombre, aportados como parámetros, devuelve un diccionario con una cadena de caracteres con el tipo de centro y el mes como clave y la lista de nacimientos producidos en dicho tipo de centro y dicho mes como valores.
-     
+     * **dict_filtra_nacimientos_tipocentro_mes (datos, tipocentro, mes)**: Dada una lista de  tuplas de tipo Nacimientos, el tipo de centro y el mes en nombre, aportados como parámetros, devuelve un diccionario con una cadena de caracteres con el tipo de centro y el mes como clave y la lista de nacimientos producidos en dicho tipo de centro y dicho mes como valores.
+
+#### Entrega 3
+
+ * **Bloque 3**
+ 	
+    * **dict_cuenta_numero_nacimientos_por_hospital (datos)**: Dada una lista de  tuplas de tipo Nacimientos, facilitada como parámetro, devuelve un diccionario con una cadena de caracteres con el nombre del hospital en cuestión, como clave, y el número total de nacimientos producidos en dicho hospital como valor..
+    * **dict_calcula_altura_promedio_por_hospital (datos)**: Dada una lista de  tuplas de tipo Nacimientos, facilitada como parámetro, devuelve un diccionario con una cadena de caracteres con el nombre del hospital en cuestión, como clave, y el promedio de altura de los nacimientos para dicho hospital, como valor.	
+
+    * **dict_calcula_porcentaje_nacimientos_por_género_provincia(datos)**: Dada una lista de  tuplas de tipo Nacimientos, facilitada como parámetro, devuelve un diccionario con una cadena de caracteres con la provincia del hospital en cuestión, como clave, y el porcentaje de hombres y mujeres respecto del total de nacimientos, producidos en dicha provincia como valor.
+    
+    * **dict_calcula_nacimientos_menor_peso_por_municipio(datos)**:  Dada una lista de  tuplas de tipo Nacimientos, facilitada como parámetro, devuelve un diccionario con una cadena de caracteres con el municipio del hospital en cuestión, como clave, y una lista con los pesos de los nacimientos producidos en dicho municipio, ordenada de menor a mayor, como valor. 
+
+ 
+ * **Bloque 4 (Voluntario)**
+ 	
+    * **convierte_mesnum_mesnom(mes)**: Función auxiliar que convierte el mes en número aportado como parámetro a mes como nombre, para hacer uso del diccionario siguiente como objeto de estudio en la gráfica a continuación.
+
+    * **dict_nacimientos_por_mes(datos)**: Dada una lista de  tuplas de tipo Nacimientos, facilitada como parámetro, devuelve un diccionario con una cadena de caracteres con el mes de los nacimientos en cuestión, como clave, y el total de los nacimientos producidos en dicho mes, como valor.
+
+    * **grafica_nacimientos_por_mes(etiquetas, valores, titulo, etiqueta_eje_x,etiqueta_eje_y)**: Dadas unas etiquetas, que corresponden a una lista de valores (eje x) para cada uno de los gráficos de barras, unos valores (eje y), que corresponden a las imágenes de cada uno de los gráficos, un título que defina los datos que se están observando en la gráfica de barras, así como las correspondientes etiquetas para cada uno de los ejes, todo ello aportado mediante parámetros, muestra una gráfica en la que se representan el total de nacimientos producidos en cada mes.
+
+
 ### Módulo test_nacimientos
 
 En este módulo se han definido las siguientes funciones, las cuales son usadas para probar la función cuyo nombre posee. Por ejemplo, la función **test_lee_registros** prueba la función **lee_registros**.
@@ -87,4 +109,10 @@ En este módulo se han definido las siguientes funciones, las cuales son usadas 
 * **test_calcula_pesopromedio_género_provincias()**
 * **test_calcula_altura_max_género_tipocentro()**
 * **test_filtra_recientes_nacimientos_género_provincias()**
-* **test_filtra_dict_nacimientos_tipocentro_mes()**
+* **test_dict_filtra_nacimientos_tipocentro_mes()**
+* **test_dict_cuenta_numero_nacimientos_por_hospital()**
+* **test_dict_calcula_altura_promedio_por_hospital()**
+* **test_dict_calcula_porcentaje_nacimientos_por_género_provincia()**
+* **test_dict_calcula_nacimientos_menor_peso_por_municipio()**
+* **test_dict_nacimientos_por_mes()**
+* **test_grafica_nacimientos_por_mes()**
