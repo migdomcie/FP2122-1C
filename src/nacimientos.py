@@ -179,7 +179,7 @@ def dict_calcula_porcentaje_nacimientos_por_género_provincia(datos):
 
 #FUNCION TIPO 13
 
-def dict_calcula_nacimientos_menor_peso_por_municipio(datos):
+def dict_calcula_nacimientos_menor_peso_por_municipio(datos, n):
     dic_aux= {}
        
     for registro in datos:                                                                      
@@ -208,7 +208,7 @@ def dict_calcula_nacimientos_menor_peso_por_municipio(datos):
     
     lista_pesos_ordenados_provincia= [sorted(set(lista)) for lista in dic_aux.values()]
     
-    dic= {clave: valor for clave, valor in zip(dic_aux.keys(), lista_pesos_ordenados_provincia)}
+    dic= {clave: valor[:n] for clave, valor in zip(dic_aux.keys(), lista_pesos_ordenados_provincia)}
 
     return dic
 

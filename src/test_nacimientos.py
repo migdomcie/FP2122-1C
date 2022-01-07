@@ -80,7 +80,8 @@ def test_dict_calcula_porcentaje_nacimientos_por_género_provincia():
 
 def test_dict_calcula_nacimientos_menor_peso_por_municipio():
     print("#" * 15, "TEST de dict_calcula_nacimientos_menor_peso_por_municipio", "#" * 15)
-    print(f"\n \tLos nacimientos por municipio ordenados de menor a mayor peso (en kg) son los siguientes:\n \n \t {dict_calcula_nacimientos_menor_peso_por_municipio(registros)}\n")
+    n= 5
+    print(f"\n \tLos {n} nacimientos por municipio ordenados de menor a mayor peso (en kg) son los siguientes:\n \n \t {dict_calcula_nacimientos_menor_peso_por_municipio(registros, n)}\n")
 
 ### BLOQUE 4
 #FUNCION DE USO DE MATPLOTLIB
