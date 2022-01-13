@@ -110,6 +110,19 @@ def dict_cuenta_numero_nacimientos_por_hospital (datos):
     dic= dict(Counter(lista_hospitales))       
     return dic 
 
+#FUNCIÓN DEFENSA
+
+def pesos_por_municipios(datos):
+    dic_aux=dict()
+    for registro in datos:
+        if registro.Municipio not in dic_aux:
+            dic_aux[registro.Municipio]= [(registro.Nombre, (registro.PromedioPesoH + registro.PromedioPesoM))]
+                                           
+        elif registro.Municipio not in dic_aux:
+            dic_aux[registro.Municipio]+= [(registro.Nombre, sum(registro.PromedioPesoH + registro.PromedioPesoM))]
+    
+    return dic_aux
+
 #FUNCION TIPO 11
 
 def dict_calcula_altura_promedio_por_hospital(datos): 

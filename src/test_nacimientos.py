@@ -83,6 +83,11 @@ def test_dict_calcula_nacimientos_menor_peso_por_municipio():
     n= 5
     print(f"\n \tLos {n} nacimientos por municipio ordenados de menor a mayor peso (en kg) son los siguientes:\n \n \t {dict_calcula_nacimientos_menor_peso_por_municipio(registros, n)}\n")
 
+#FUNCIÓN DEFENSA
+def test_pesos_por_municipios():
+    print("#" * 15, "TEST de pesos_por_municipios(datos)", "#" * 15)
+    print(f"\n \tLos pesos por municipios son los siguientes:\n \n \t {pesos_por_municipios(registros)}\n")
+
 ### BLOQUE 4
 #FUNCION DE USO DE MATPLOTLIB
 
@@ -128,5 +133,7 @@ test_dict_cuenta_numero_nacimientos_por_hospital()
 test_dict_calcula_altura_promedio_por_hospital()
 test_dict_calcula_porcentaje_nacimientos_por_género_provincia()
 test_dict_calcula_nacimientos_menor_peso_por_municipio()
+test_pesos_por_municipios()
 test_dict_nacimientos_por_mes()
 test_grafica_nacimientos_por_mes()
+
