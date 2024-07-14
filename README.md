@@ -104,8 +104,8 @@ En este proyecto se han implementado las siguientes funciones que corresponden a
 En este módulo se han definido las siguientes funciones, las cuales son usadas para probar la función cuyo nombre posee. Por ejemplo, la función **test_lee_registros** prueba la función **lee_registros**.
 
 * **test_lee_registros()**
-* ** registros**: variable que recoge la lista formada por cada tupla de tipo Nacimientos leída mediante la función "test_lee_registros" para su posterior uso en los demás tests.
-* **test_filtra_nacimientos_provincias() **
+* **registros**: variable que recoge la lista formada por cada tupla de tipo Nacimientos leída mediante la función "test_lee_registros" para su posterior uso en los demás tests.
+* **test_filtra_nacimientos_provincias()**
 * **test_calcula_pesopromedio_género_provincias()**
 * **test_calcula_altura_max_género_tipocentro()**
 * **test_filtra_recientes_nacimientos_género_provincias()**
